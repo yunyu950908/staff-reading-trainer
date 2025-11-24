@@ -27,7 +27,6 @@ export function TrainingSession() {
 
   // Four note mode state
   const [userAnswers, setUserAnswers] = useState<NoteName[]>([])
-  const [currentNoteIndex, setCurrentNoteIndex] = useState(0)
 
   // Get cards for current session
   const sessionCards = useMemo(() => {
@@ -58,7 +57,6 @@ export function TrainingSession() {
     setShowFeedback(false)
     setIsCorrect(false)
     setUserAnswers([])
-    setCurrentNoteIndex(0)
   }, [currentCard])
 
   const handleAnswer = (noteName: NoteName) => {
@@ -76,9 +74,6 @@ export function TrainingSession() {
         )
         setIsCorrect(allCorrect)
         setShowFeedback(true)
-      } else {
-        // Move to next note
-        setCurrentNoteIndex(newAnswers.length)
       }
     } else {
       // Single note mode logic
@@ -95,7 +90,6 @@ export function TrainingSession() {
     setShowFeedback(false)
     setIsCorrect(false)
     setUserAnswers([])
-    setCurrentNoteIndex(0)
   }
 
   const handleRating = (rating: Rating) => {

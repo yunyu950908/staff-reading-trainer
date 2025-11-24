@@ -31,6 +31,7 @@ export const CONFIG_PRESETS: ConfigPreset[] = [
         },
       },
       infiniteMode: false,
+      fourNoteMode: false,
     },
   },
   {
@@ -54,6 +55,7 @@ export const CONFIG_PRESETS: ConfigPreset[] = [
         },
       },
       infiniteMode: false,
+      fourNoteMode: false,
     },
   },
   {
@@ -77,6 +79,7 @@ export const CONFIG_PRESETS: ConfigPreset[] = [
         },
       },
       infiniteMode: false,
+      fourNoteMode: false,
     },
   },
   {
@@ -95,6 +98,7 @@ export const CONFIG_PRESETS: ConfigPreset[] = [
         },
       },
       infiniteMode: false,
+      fourNoteMode: false,
     },
   },
   {
@@ -113,6 +117,7 @@ export const CONFIG_PRESETS: ConfigPreset[] = [
         },
       },
       infiniteMode: false,
+      fourNoteMode: false,
     },
   },
 ]
