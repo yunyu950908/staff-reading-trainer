@@ -3,10 +3,10 @@ import { initReactI18next } from 'react-i18next'
 import en from './locales/en.json'
 import zh from './locales/zh.json'
 
-// Get language from localStorage or browser
+// Get language from localStorage or detect from browser
 const savedLanguage = localStorage.getItem('language')
 const browserLanguage = navigator.language.split('-')[0]
-const defaultLanguage = savedLanguage || (browserLanguage === 'zh' ? 'zh' : 'en')
+const defaultLanguage = savedLanguage ?? (browserLanguage === 'zh' ? 'zh' : 'en')
 
 i18n.use(initReactI18next).init({
   resources: {

@@ -17,8 +17,12 @@ export const currentCardAtom = atom<Card | null>(null)
 // Selected clef for practice
 export const selectedClefAtom = atomWithStorage<Clef>('selected-clef', 'treble')
 
-// Language preference
-export const languageAtom = atomWithStorage<string>('language', 'en')
+// Language preference - detect browser language if not saved
+const getBrowserLanguage = () => {
+  const browserLang = navigator.language.split('-')[0]
+  return browserLang === 'zh' ? 'zh' : 'en'
+}
+export const languageAtom = atomWithStorage<string>('language', getBrowserLanguage())
 
 // Training configuration
 const trebleDefault = getDefaultRange('treble')
