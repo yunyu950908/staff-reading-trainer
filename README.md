@@ -6,7 +6,7 @@
 
 A modern web-based music notation learning tool powered by **Spaced Repetition System**
 
-[English](#english) | [中文](#中文)
+[English](README_EN.md) | [中文](#中文)
 
 </div>
 
@@ -19,7 +19,6 @@ A modern web-based music notation learning tool powered by **Spaced Repetition S
 ## 核心特性
 
 ### 智能学习系统
-
 - **SM-2 间隔重复算法** - 科学调整复习间隔，优化长期记忆
 - **双谱号支持** - 高音谱号（C4-E6）和低音谱号（E2-G4）
 - **自定义音符范围** - 针对性练习特定音符区间
@@ -27,14 +26,12 @@ A modern web-based music notation learning tool powered by **Spaced Repetition S
 - **无限模式** - 不受 SRS 时间限制，持续练习
 
 ### 交互体验
-
 - **键盘快捷键** - 数字键 1-7 快速答题，R 重试，Enter 继续
 - **智能反馈** - 答对评级（Again/Hard/Good/Easy），答错可重试
 - **实时统计** - 学习进度、正确率、卡片状态一目了然
 - **音符范围预览** - 可视化预览自定义范围的音符分布
 
 ### 技术亮点
-
 - **双语支持** - 完整的中文/英文界面
 - **本地存储** - 所有数据保存在浏览器，支持离线使用
 - **响应式设计** - 完美适配桌面和移动设备
@@ -74,7 +71,6 @@ pnpm preview
 ### 1. 初始化卡片
 
 首次使用时：
-
 1. 进入 **Settings（设置）** 页面
 2. （可选）点击 **Show Advanced Settings（显示高级设置）**
 3. 选择要启用的谱号和音符范围
@@ -85,28 +81,24 @@ pnpm preview
 展开高级设置后可以：
 
 **启用谱号**
-
 - 高音谱号（Treble Clef）：C4 - E6
 - 低音谱号（Bass Clef）：E2 - G4
 
 **自定义范围示例**
 
 初学者 - 中央区域：
-
 ```
 Treble: C4 - C5
 Bass:   C3 - C4
 ```
 
 高音区强化：
-
 ```
 Treble: C5 - E6
 Bass:   禁用
 ```
 
 低音区强化：
-
 ```
 Treble: 禁用
 Bass:   E2 - G3
@@ -121,7 +113,6 @@ Bass:   E2 - G3
 ### 4. 回答与评级
 
 **答对时**：
-
 - 选择难度评级：
   - **Again（重来）** - 完全不记得
   - **Hard（困难）** - 记得但很困难
@@ -130,14 +121,12 @@ Bass:   E2 - G3
 - 快捷键：按 `Enter` 或 `Space` 自动评为 "Good"
 
 **答错时**：
-
 - **Retry (R)** - 重新尝试同一张卡片
 - **Continue (Enter)** - 继续到下一张（标记为需重新学习）
 
 ### 5. 查看统计
 
 在 **Statistics（统计）** 页面查看：
-
 - 总卡片数、新卡片数、学习中的卡片
 - 待复习卡片数
 - 今日学习数、总复习数
@@ -145,26 +134,26 @@ Bass:   E2 - G3
 
 ## 键盘快捷键
 
-| 场景   | 按键              | 功能               |
-| ------ | ----------------- | ------------------ |
-| 答题   | `1-7`             | 选择音符 C-B       |
+| 场景 | 按键 | 功能 |
+|------|------|------|
+| 答题 | `1-7` | 选择音符 C-B |
 | 答对后 | `Enter` / `Space` | 评为 "Good" 并继续 |
-| 答错后 | `R`               | 重新尝试           |
-| 答错后 | `Enter` / `Space` | 继续到下一题       |
+| 答错后 | `R` | 重新尝试 |
+| 答错后 | `Enter` / `Space` | 继续到下一题 |
 
 ## 技术栈
 
-| 类别       | 技术                    | 版本    |
-| ---------- | ----------------------- | ------- |
-| 框架       | React                   | 19.2.0  |
-| 构建工具   | Vite (rolldown-vite)    | 7.2.5   |
-| 语言       | TypeScript              | 5.9.3   |
-| 样式       | Tailwind CSS            | 4.1.17  |
-| UI 组件    | shadcn/ui + Radix UI    | -       |
-| 五线谱渲染 | VexFlow                 | 5.0.0   |
-| 状态管理   | Jotai                   | 2.15.1  |
-| 国际化     | i18next + react-i18next | 25.6.3  |
-| 工具库     | Lodash                  | 4.17.21 |
+| 类别 | 技术 | 版本 |
+|------|------|------|
+| 框架 | React | 19.2.0 |
+| 构建工具 | Vite (rolldown-vite) | 7.2.5 |
+| 语言 | TypeScript | 5.9.3 |
+| 样式 | Tailwind CSS | 4.1.17 |
+| UI 组件 | shadcn/ui + Radix UI | - |
+| 五线谱渲染 | VexFlow | 5.0.0 |
+| 状态管理 | Jotai | 2.15.1 |
+| 国际化 | i18next + react-i18next | 25.6.3 |
+| 工具库 | Lodash | 4.17.21 |
 
 ## 项目结构
 
@@ -223,7 +212,6 @@ src/
    - **Node 版本**：18+
 
 项目已包含 Cloudflare Pages 所需的配置文件：
-
 - `public/_headers` - HTTP 安全头配置
 - `public/_redirects` - SPA 路由重定向
 
@@ -234,7 +222,6 @@ src/
 ## 数据存储
 
 所有数据存储在浏览器的 LocalStorage：
-
 - 学习卡片数据（`staff-training-cards`）
 - 学习统计（`staff-training-stats`）
 - 用户设置（`selected-clef`、`training-config` 等）
@@ -245,7 +232,6 @@ src/
 ## 开发文档
 
 详细文档请查看 `docs/` 目录：
-
 - [快速开始指南](docs/QUICKSTART.md)
 - [功能总结](docs/SUMMARY.md)
 - [音符范围定制](docs/RANGE_CUSTOMIZATION.md)
@@ -268,3 +254,4 @@ A: 数据存储在 LocalStorage，可通过浏览器的开发者工具导出。
 ## 许可证
 
 MIT License - 可自由使用和修改
+
