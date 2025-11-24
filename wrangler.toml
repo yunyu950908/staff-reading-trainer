@@ -1,0 +1,29 @@
+# Cloudflare Pages 项目配置
+# 文档: https://developers.cloudflare.com/pages/platform/wrangler/
+
+# 项目名称
+name = "staff-reading-trainer"
+
+# 构建输出目录
+pages_build_output_dir = "dist"
+
+# 兼容性日期
+compatibility_date = "2024-01-01"
+
+# 使用说明:
+# 1. 部署命令:
+#    wrangler pages deploy dist
+#    或使用: pnpm run deploy
+# 2. 本地预览部署构建:
+#    wrangler pages dev dist
+# 3. 构建命令: pnpm build
+# 4. 响应头配置请参考 public/_headers 文件
+# 5. 重定向配置请参考 public/_redirects 文件
+# 6. 环境变量在 Cloudflare Dashboard 的项目设置中配置
+
+# 项目特性:
+# - React 19 单页应用 (SPA)
+# - Vite 构建
+# - 所有数据存储在浏览器 LocalStorage
+# - 无需后端服务器
+# - 支持 PWA 离线使用

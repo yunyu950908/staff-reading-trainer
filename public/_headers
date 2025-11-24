@@ -1,0 +1,35 @@
+# Security Headers for Staff Reading Trainer
+# 适用于所有路由的安全响应头
+
+/*
+  # 防止点击劫持攻击
+  X-Frame-Options: DENY
+
+  # 防止 MIME 类型嗅探
+  X-Content-Type-Options: nosniff
+
+  # 控制 Referrer 信息
+  Referrer-Policy: strict-origin-when-cross-origin
+
+  # 启用浏览器 XSS 保护
+  X-XSS-Protection: 1; mode=block
+
+  # 内容安全策略 (CSP)
+  # 允许内联样式和脚本（Vite 需要），允许从同源加载资源
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self';
+
+  # 启用 HSTS (仅 HTTPS)
+  # 注意：仅在使用 HTTPS 时有效，HTTP 会被忽略
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+
+  # 权限策略 - 禁用不必要的浏览器功能
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), payment=(), usb=(), magnetometer=(), gyroscope=()
+
+# 静态资源缓存策略
+/assets/*
+  # 静态资源长期缓存（1年）
+  Cache-Control: public, max-age=31536000, immutable
+
+/index.html
+  # HTML 不缓存，确保总是获取最新版本
+  Cache-Control: public, max-age=0, must-revalidate

@@ -1,0 +1,10 @@
+# Redirects for Staff Reading Trainer (React SPA)
+# 文档: https://developers.cloudflare.com/pages/platform/redirects/
+
+# SPA 路由重定向
+# 将所有未匹配的路由重定向到 index.html，保持 200 状态码
+# 这样 React Router 可以处理客户端路由
+/*    /index.html   200
+
+# 可选：添加 404 页面重定向（如果需要自定义 404 页面）
+# /404.html  404

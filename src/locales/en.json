@@ -1,0 +1,118 @@
+{
+  "app": {
+    "title": "Staff Reading Trainer",
+    "subtitle": "Master music notation with spaced repetition",
+    "footer": {
+      "built": "Built with React, Vite, VexFlow, and Jotai",
+      "shortcuts": "Keyboard shortcuts: 1-7 (C-B) • Enter/Space (Continue) • ESC (Cancel)"
+    }
+  },
+  "nav": {
+    "training": "Training",
+    "statistics": "Statistics",
+    "settings": "Settings"
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Configure your practice session",
+    "currentClef": {
+      "label": "Current Clef",
+      "description": "Select which clef to practice with",
+      "treble": "Treble Clef",
+      "bass": "Bass Clef"
+    },
+    "advancedSettings": {
+      "show": "Show Advanced Settings",
+      "hide": "Hide Advanced Settings",
+      "enabledClefs": {
+        "label": "Enabled Clefs",
+        "description": "Select which clefs to include in your card deck"
+      },
+      "trebleRange": {
+        "label": "Treble Clef Range",
+        "startNote": "Start Note",
+        "endNote": "End Note"
+      },
+      "bassRange": {
+        "label": "Bass Clef Range",
+        "startNote": "Start Note",
+        "endNote": "End Note"
+      }
+    },
+    "cards": {
+      "noCards": "No cards found. Initialize your card deck to get started.",
+      "cardCount": "{{count}} cards in your deck",
+      "initialize": "Initialize Cards",
+      "reinitialize": "Reinitialize Cards",
+      "reset": "Reset All Progress",
+      "resetConfirm": "Are you sure you want to reset all progress? This cannot be undone."
+    },
+    "language": {
+      "label": "Language",
+      "description": "Select your preferred language"
+    },
+    "infiniteMode": {
+      "label": "Infinite Mode",
+      "description": "Enable continuous practice without time restrictions. All cards will be available regardless of review schedule."
+    },
+    "fourNoteMode": {
+      "label": "Four Note Mode",
+      "description": "Display four notes at once. All four must be correct to pass."
+    },
+    "rangeRecommendations": {
+      "label": "Recommended Practice Ranges",
+      "beginner": {
+        "title": "🟢 Beginner",
+        "description": "Treble: C4-G4 (Middle C area) • Bass: F3-C4 (Around middle C)"
+      },
+      "intermediate": {
+        "title": "🟡 Intermediate",
+        "description": "Treble: C4-C5 (One octave from middle C) • Bass: E3-E4 (Extended range)"
+      },
+      "advanced": {
+        "title": "🔴 Advanced",
+        "description": "Treble: C4-E6 (Full staff range) • Bass: E2-G4 (Full staff range)"
+      }
+    }
+  },
+  "training": {
+    "title": "Identify the Note",
+    "titleFourNote": "Identify All Four Notes",
+    "noCards": {
+      "title": "No Cards Available",
+      "message": "All cards have been reviewed for today. Great work!"
+    },
+    "feedback": {
+      "correct": "✓ Correct!",
+      "wrong": "✗ Wrong! The correct answer is {{answer}}",
+      "wrongFourNote": "✗ Wrong! The correct answers are: {{answers}}",
+      "difficulty": "How difficult was this card?",
+      "whatToDo": "What would you like to do?",
+      "answerCount": "Answer {{current}}/{{total}}"
+    },
+    "rating": {
+      "again": "Again",
+      "hard": "Hard",
+      "good": "Good",
+      "easy": "Easy"
+    },
+    "actions": {
+      "retry": "Retry (R)",
+      "continue": "Continue (Enter)"
+    },
+    "hints": {
+      "keyboard": "Keyboard: 1-7 for C-B",
+      "ratingHint": "Press Enter/Space for \"Good\" or click a button",
+      "wrongHint": "Press R to retry or Enter to continue"
+    }
+  },
+  "statistics": {
+    "title": "Statistics",
+    "totalCards": "Total Cards",
+    "newCards": "New Cards",
+    "learning": "Learning",
+    "toReview": "To Review",
+    "studiedToday": "Studied Today",
+    "accuracy": "Accuracy"
+  }
+}
