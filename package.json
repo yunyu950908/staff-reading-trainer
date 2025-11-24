@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "pnpm build && wrangler pages deploy dist"
+    "deploy": "pnpm build && npx wrangler pages deploy"
   },
   "dependencies": {
     "@radix-ui/react-switch": "^1.2.6",
